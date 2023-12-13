@@ -33,11 +33,11 @@ public class getCeilingElem{
             return arr[mid];
         }
         else if (x < arr[mid]){
-            result = mid;
             end=mid-1;
 
        }
        else{
+        result = mid;
         start = mid +1;     
     }
 }
@@ -46,7 +46,7 @@ public class getCeilingElem{
     public static void main(String[] args) {
         
     
-    int[] arr=new int[]{2,3,5,9,14,16,18};
+    int[] arr=new int[]{2,3,5,7,9,14,16,18};
     Scanner sc =new Scanner(System.in);
     int target = sc.nextInt();
     // search(arr, target);
@@ -54,6 +54,7 @@ public class getCeilingElem{
     System.out.println(a);
     sc.close();
    }
-}
+   }
+
 
 
