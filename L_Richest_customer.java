@@ -1,7 +1,17 @@
 // import java.util.*;
 // import LearnDSA;
 
- class Solution{
+public class L_Richest_customer {
+    public static void main(String[] args) {
+        Richie s = new Richie();
+        int[][] nums ={{2,8,7},{7,1,3},{1,9,5}};
+        s.Rich(nums);
+        
+        // [[2,8,7],[7,1,3],[1,9,5]]
+    }
+    
+}
+class Richie{
     public void Rich(int[][] arr){
         int sum =0;
         int temp=0;
@@ -10,25 +20,13 @@
                 sum = sum+arr[i][j];
             }
             if (sum>temp) {
-                temp =sum;   
+                temp =sum;
             }
             sum=0;
         }
         System.out.println(temp);
     }
-    
-}
 
-
-public class L_Richest_customer {
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        int[][] nums ={{2,8,7},{7,1,3},{1,9,5}};
-        s.Rich(nums);
-        
-        // [[2,8,7],[7,1,3],[1,9,5]]
-    }
-    
 }
 
     

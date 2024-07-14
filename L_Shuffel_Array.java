@@ -1,8 +1,8 @@
 import java.util.*;
 // import LearnDSA;
 
- class Solution{
-    public void Shuffel(int[] arr,int n){
+ class Shuffel{
+    public void shuffel(int[] arr,int n){
         int[] ans = new int[n*2];
         for(int i=0;i<n;i++){
             ans[2*i]=arr[i];  
@@ -16,14 +16,11 @@ import java.util.*;
 
 public class L_Shuffel_Array {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Shuffel s = new Shuffel();
         int[] nums ={1,2,3,4,4,3,2,1};
         int n =4;
-        s.Shuffel(nums,n);
-        
-        
+        s.shuffel(nums,n);
     }
-    
 }
 
     

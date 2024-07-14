@@ -2,7 +2,7 @@
 import java.util.*;
 // import LearnDSA;
 
- class Solution{
+ class Sum{
     public void sum(int[] arr){
         int n = arr.length;
         int[] ans = new int[n];
@@ -19,7 +19,7 @@ import java.util.*;
 
 public class L_Running_sum {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Sum s = new Sum();
         int[] nums ={1,2,3,4};
         s.sum(nums);
         
